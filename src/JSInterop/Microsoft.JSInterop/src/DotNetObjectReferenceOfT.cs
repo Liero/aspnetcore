@@ -93,6 +93,11 @@ namespace Microsoft.JSInterop
                 }
             }
         }
+        
+        public override string ToString()
+        {
+            return $"{base.ToString()} {_objectId}";
+        }
 
         internal void ThrowIfDisposed()
         {
